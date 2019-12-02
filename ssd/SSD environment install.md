@@ -85,12 +85,12 @@ Pandas
 ## Manual Protobuf Compilation (Only if you had problem with above code)
 컴파일시 에러가 나면 수동으로 컴파일한다.
 
-> mkdir protoc_3.0
-> cd protoc_3.0
-> wget -O protobuf.zip https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip
-> unzip protobuf.zip
-> cd ..
-> ./protoc_3.0/bin/protoc object_detection/protos/*.proto --python_out=.
+> mkdir protoc_3.0  
+> cd protoc_3.0  
+> wget -O protobuf.zip https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip  
+> unzip protobuf.zip  
+> cd ..  
+> ./protoc_3.0/bin/protoc object_detection/protos/*.proto --python_out=.  
 
 ## Add Libraries to PYTHONPATH
 pythonpath에 models/research/, /slim 경로를 추가해야됨
