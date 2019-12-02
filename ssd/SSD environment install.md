@@ -3,8 +3,6 @@
 Tensorflow는 python3에서 더 잘동작한다고 한다.  
 따라서 python3를 python 기본버전으로 하여 사용하는것이 바람직하다.
 
-
-# valid for this session only
 ~/.bashrc 에 아래 커맨드를 추가  
 alias python=python3  
 
