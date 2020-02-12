@@ -5,7 +5,16 @@ sudo apt upgrade
 sudo apt install g++  
 sudo apt install cmake
 
->sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev libv4l-dev v4l-utils libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libqt4-dev mesa-utils libgl1-mesa-dri libqt4-opengl-dev libatlas-base-dev gfortran libeigen3-dev python2.7-dev python3-dev python-numpy python3-numpy
+>sudo apt-get install build-essential cmake pkg-config libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev libv4l-dev v4l-utils libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libqt4-dev mesa-utils libgl1-mesa-dri libqt4-opengl-dev libatlas-base-dev gfortran libeigen3-dev python2.7-dev python3-dev python-numpy python3-numpy  
+
+if occurr this error
+>E: Unable to locate package libjasper-dev
+E: Package 'libpng12-dev' has no installation candidate  
+
+you can use this command
+>sudo add-apt-repository 'deb http://security.ubuntu.com/ubuntu xenial-security main'
+sudo apt update
+sudo apt install libjasper1 libjasper-dev
 
 # OpenCV 3.2 install
 
